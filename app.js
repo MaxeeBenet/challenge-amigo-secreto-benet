@@ -27,7 +27,6 @@ function agregarAmigos() {
     let nuevoAmigo = document.createElement("li");
     nuevoAmigo.textContent = agregarAmigo.trim();
 
-    
     listaAmigo.appendChild(nuevoAmigo);
 
     //vuelvo el espacio en blanco luego de ingresar un nombre
