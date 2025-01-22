@@ -10,20 +10,20 @@ function agregarAmigos() {
     let agregarAmigo = document.getElementById("amigo").value;
     //creo el llamado al index con elementbyid
     let listaAmigo = document.getElementById("listaAmigos");
-    //uso el if, si el nombre es un espacio vacio, tira el alert.
+    //uso el if, si el nombre es un espacio vacio, tira un alert de que no debe estar vacio el campo, uso la funcion trim() para sacar espacios extras en el ingreso de los nombres.
     if (agregarAmigo.trim() === "") {
         alert("Por favor, escribir un nombre, no debe estar vacio");
         return;
-    //verifico que no este ya el nombre.
+    //verifico que no este ya el nombre nuevamente utilizo la funcion trim() para quitar espacios
     } if (listaAmigos.includes(agregarAmigo.trim())) {
         alert("Este nombre ya se ingreso, por favor, modifiquelo.")
         return;
     }
-    
+    //ingreso el nombre sin espacios a la lista.
     listaAmigos.push(agregarAmigo.trim());
     //verificar que los elementos se esten agregando en las listas.
     console.log(listaAmigos)
-    //utilizo otra variable para crear la lista en HTML
+    //utilizo otra variable para crear el elemento lista en HTML
     let nuevoAmigo = document.createElement("li");
     nuevoAmigo.textContent = agregarAmigo.trim();
     //agrego los nombres de la funcion agregar amigo a la lista del elemento <li>.
