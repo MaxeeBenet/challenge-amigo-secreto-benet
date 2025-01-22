@@ -26,7 +26,7 @@ function agregarAmigos() {
     //utilizo otra variable para crear la lista en HTML
     let nuevoAmigo = document.createElement("li");
     nuevoAmigo.textContent = agregarAmigo.trim();
-    //agrego los nombres de la funcion agregar amigo a la lista del index.
+    //agrego los nombres de la funcion agregar amigo a la lista del elemento <li>.
     listaAmigo.appendChild(nuevoAmigo);
 
     //vuelvo el espacio en blanco luego de ingresar un nombre
