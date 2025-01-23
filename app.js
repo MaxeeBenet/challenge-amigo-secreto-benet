@@ -33,6 +33,16 @@ function agregarAmigos() {
     document.getElementById("amigo").value = "";
 }
 
+//investigando un poco implemente la funcion teclaenter para que al usuario tambien le sea comodo el presionar la tecla enter pueda agregar amigos.
+function teclaEnter() {
+    document.getElementById("amigo").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            agregarAmigos();
+        }
+    });
+}
+
+teclaEnter()
 
 function recorrerListaAmigos() {
     //llamo a la lista HTML por su ID
@@ -42,11 +52,11 @@ function recorrerListaAmigos() {
     //iterar sobre la lista con el bucle for, recorro la lista asignandole valor 0 a i, al recorrer la lista, va a ir sumando de a 1 por cada elemento en la lista.
     for (let i = 0; i < listaAmigos.length; i++) {
         //creo la lista con el createElement
-        let amigoItem = document.createElement("li");
+        let amigoNuevoLi = document.createElement("li");
         //comparo cada elemento de mi lista con la lista amigoItem
-        amigoItem.textContent = listaAmigos[i];
+        amigoNuevoLi.textContent = listaAmigos[i];
         //agrego cada elemento de la listaAmigos a listaAmigosHTML
-        listaAmigosHTML.appendchild(amigoItem);
+        listaAmigosHTML.appendChild(amigoNuevoLi);
     }
 
 }
@@ -62,6 +72,8 @@ function sortearAmigos() {
     //Asigno la variable segun el indice provisto por amigoRandom y se lo indica en el indice de la listaAmigos.
     let amigoSorteado = listaAmigos[amigoRandom];
     
+    //busco el elemento resultado.
     let resultadoHTML = document.getElementById("resultado");
-    resultadoHTML.innerHTML = `<li>¡El amigo sorteado es: <strong>${amigoSorteado}</strong>!</li>`;
+    //cambio su contenido con innerHTML y lo muestro.
+    resultadoHTML.innerHTML = `<li>El amigo sorteado es: ${amigoSorteado}!</li>`;
 }
