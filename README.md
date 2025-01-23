@@ -16,7 +16,7 @@ La idea de este desafio es crear una aplicacion que tenga las siguientes funcion
 
 ## Funciones
 
-1. Función ``agregarAmigos()``: Con esta función establecemos los parametros para que el usuario pueda agregar nombres pero con 2 excepciones, la primera que no puede ser un campo vacio y la segunda que no se puede repetir el nombre. Creamos una lista en nuestro index para que pueda ser mostrada en pantalla mientras el usuario va cargando los nombres a la lista.
+1. Función ``agregarAmigos()``: Con esta función establecemos los parametros para que el usuario pueda agregar nombres pero con 2 excepciones: la primera que no puede ser un campo vacio y la segunda que no se puede repetir el nombre. Creamos una lista en nuestro index para que pueda ser mostrada en pantalla mientras el usuario va cargando los nombres a la lista.
 2. Función ``recorrerListaAmigos()``: Con esta función recorremos la lista de amigos con el bucle ``for()`` y asignamos los valores dentro de una lista en el <index.html>.
 3. Función ``sortearAmigos()``: Mediante el uso de la función random, recorremos los elementos de dicha lista y seleccionamos uno de manera aleatoria y lo mostramos buscando el elemento "resultado" dentro de nuestro index.
 
