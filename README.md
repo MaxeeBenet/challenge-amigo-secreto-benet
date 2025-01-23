@@ -6,7 +6,7 @@
 
 Primer challenge de Alura LATAM, dicho challenge es crear un juego donde poder sortear de entre un grupo de amigos un nombre para realizar el muy conocido ***amigo secreto***.
 
-### Desarrollo
+## Desarrollo
 
 La idea de este desafio es crear una aplicacion que tenga las siguientes funciones: 
 - Agregar amigos a una lista mediante al hacer click en el boton añadir.
@@ -14,29 +14,24 @@ La idea de este desafio es crear una aplicacion que tenga las siguientes funcion
 - Visualizacion de la lista previamente creada.
 - Sorteo aleatorio de uno de los nombre y que muestre el nombre seleccionado en la página.
 
-### Funciones
+## Funciones
 
-1. Funcion agregarAmigos(): Con esta función establecemos los parametros para que el usuario pueda agregar nombres pero con 2 excepciones, la primera que no puede ser un campo vacio y la segunda que no se puede repetir el nombre. 
-Creamos una lista <li> en nuestro index para que pueda ser mostrada en pantalla mientras el va cargando los nombres a la lista.
-   
-2. Funcion recorrerListaAmigos(): Con esta funcion recorremos la lista de amigos con el bucle for () y asignamos los valores dentro de una lista en el index.html <li>.
-  
-3. Funcion sortearAmigos(): Mediante el uso de la funcion random, recorremos los elementos de dicha lista y seleccionamos uno de manera aleatoria 
-y lo mostramos buscando el elemento "resultado" dentro de nuestro index.
+1. Funcion ``agregarAmigos()``: Con esta función establecemos los parametros para que el usuario pueda agregar nombres pero con 2 excepciones, la primera que no puede ser un campo vacio y la segunda que no se puede repetir el nombre. Creamos una lista en nuestro index para que pueda ser mostrada en pantalla mientras el va cargando los nombres a la lista.
+2. Funcion ``recorrerListaAmigos()``: Con esta funcion recorremos la lista de amigos con el bucle ``for()`` y asignamos los valores dentro de una lista en el <index.html>.
+3. Funcion ``sortearAmigos()``: Mediante el uso de la funcion random, recorremos los elementos de dicha lista y seleccionamos uno de manera aleatoria y lo mostramos buscando el elemento "resultado" dentro de nuestro index.
 
-### Posibles mejoras
+## Posibles mejoras
 
 1. Crear una funcion que tambien permita ingresar amigos mediante la tecla enter (realizado).
-  
 2. Implementar una funcion que no permita que se muestre el mismo nombre y guarde dichos elementos en otra lista aparte, siempre y cuando dicha lista tenga mas de 3 elementos.
 
-### Instalacion
+## Instalacion
 
 Para clonar repositorio
 
 ``` git clone https://github.com/MaxeeBenet/challenge-amigo-secreto-benet.git ``` en su consola de Git o bien descargar los archivos en zip y utilizarlos en su editor de codigo preferido.
 
-### Modo de uso
+## Modo de uso
 
 1. Introducir un minimo de tres nombres (no pueden repetirse ni poner espacios) haciendo click en el boton "añadir" o presionando la tecla enter.
 2. Una vez completado todos los nombres que desea agregar, presionar el boton "Sortear amigo".
