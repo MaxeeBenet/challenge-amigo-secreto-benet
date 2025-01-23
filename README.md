@@ -12,7 +12,7 @@ La idea de este desafio es crear una aplicacion que tenga las siguientes funcion
 - Agregar amigos a una lista mediante al hacer click en el boton añadir.
 - Verificar la entrada de los datos para que no pueda agregarse un nombre vacio y que los nombres provistos tampoco tengan espacios.
 - Visualización de la lista previamente creada.
-- Sorteo aleatorio de uno de los nombre y que muestre el nombre seleccionado en la página.
+- Sorteo aleatorio de uno de los nombres y que muestre el nombre seleccionado en la página.
 
 ## Funciones
 
